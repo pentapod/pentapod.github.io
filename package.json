@@ -1,0 +1,22 @@
+{
+  "name": "pentapod.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/pentapod/pentapod.github.io.git",
+    "type": "git"
+  },
+  "author": "spring-raining",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "2.0.0-beta.16",
+    "react-document-meta": "^2.1.1",
+    "react-inlinesvg": "^0.5.5"
+  }
+}
