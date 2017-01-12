@@ -112,7 +112,7 @@ export default class extends React.Component {
               padding: 0;
             }
             .container-brand {
-              padding-right: 3em;
+              padding-right: 1em;
             }
           }
         `}</style>

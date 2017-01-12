@@ -22,6 +22,7 @@ class Body extends React.Component {
         <Head>
           <title>{this.props.title}</title>
 
+          <meta name="viewport" content="initial-scale=1.0" />
           <meta property="og:site_name" content={this.props.siteName} />
           <meta property="og:title" content={this.props.title} />
           <meta property="og:url" content={this.props.url} />
