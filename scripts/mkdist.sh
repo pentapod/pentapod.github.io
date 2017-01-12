@@ -12,8 +12,8 @@ cd $(dirname $0)/..
 echo "starting server..."
 node_modules/.bin/next build
 node_modules/.bin/next start -p 30030 2>&1 > /dev/null &
-NEXT_PID=$!
-NEXT_PGID=$(ps -aeo pid,pgid | grep -E "$NEXT_PID\s+[0-9]+" | sed "s/$NEXT_PID\s\+\([0-9]\+\)/\1/g")
+#NEXT_PID=$!
+#NEXT_PGID=$(ps -aeo pid,pgid | grep -E "$NEXT_PID\s+[0-9]+" | sed "s/$NEXT_PID\s\+\([0-9]\+\)/\1/g")
 
 echo "downloading static assets..."
 rm -rf $DEST_DIR
@@ -36,8 +36,8 @@ wget --html-extension \
 set -e
 
 echo "closing server..."
-#pkill -INT -g $$ node
-pkill -INT -g $NEXT_PGID
+pkill -INT -g $$ node
+#pkill -INT -g $NEXT_PGID
 wait
 
 echo "copying static files.."

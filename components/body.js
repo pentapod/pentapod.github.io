@@ -13,7 +13,7 @@ class Body extends React.Component {
     description: 'かゆいところに手が届くソフトウェア技術系同人サークル「pentapod」のHPです。',
     url: 'https://pentapod.github.io',
     image: 'https://pentapod.github.io/static/og.png',
-    favicon: '/static/favicon.ico',
+    favicon: 'https://pentapod.github.io/static/favicon.png',
   };
 
   render() {
@@ -32,7 +32,7 @@ class Body extends React.Component {
           <meta property="twitter:creator" content="@spring_raining" />
           <meta name="google-site-verification" content="uf35tScRk5eGKgvnTasid2iYy3Z3TdPrqFC7rgLsfjs" />
 
-          <link rel="shortcut icon" href={this.props.favicon} />
+          <link rel="icon" type="image/png" href={this.props.favicon} />
           <link rel="canonical" href={this.props.url} />
 
           <script dangerouslySetInnerHTML={{__html:
