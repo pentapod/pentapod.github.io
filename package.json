@@ -13,7 +13,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy-page": "git subtree push --prefix dist origin master"
   },
   "dependencies": {
     "next": "2.0.0-beta.16",
