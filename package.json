@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "next": "2.0.0-beta.16",
