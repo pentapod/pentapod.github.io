@@ -44,4 +44,7 @@ echo "copying static files.."
 mkdir -p $DEST_DIR/static
 cp -r $STATIC_DIR/* $DEST_DIR/static
 
+# prevent using jekyll on github pages
+touch $DEST_DIR/.nojekyll
+
 echo "done"
