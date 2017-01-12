@@ -1,14 +1,20 @@
 import React from 'react';
 import Isvg from 'react-inlinesvg';
 
-import Body from './_body';
+import Body from './../components/body';
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      textColor: `hsl(${Math.random() * 360}, 27%, 34%)`,
+      textColor: '#575757',
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      textColor: `hsl(${Math.random() * 360}, 27%, 34%)`,
+    });
   }
 
   render() {
